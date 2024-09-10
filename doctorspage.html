@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors | Care Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="reset_css.css">
+    <script src="https://kit.fontawesome.com/f808eb4706.js"></script> 
+</head>
+<body>
+  <header id="header">
+    <ul id="sidebar">
+      <li><a onclick="Hidesidebar()" href="index.html"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="doctorspage.html">Doctors Page</a></li>
+      <li><a href="consultingreservation.html">Consulting Reservation</a></li>
+      <li><a href="pharmacy.html">Pharmacy</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul> 
+    <nav id="nav_bar"> 
+      <ul>
+        <li><a class="logoatag" href="index.html"><img src="images/Green and White Modern Medical Logo.png" class="logo"> </a></li>
+        <li class="hideonmobile"><a href="index.html">Home</a></li>
+        <li class="hideonmobile"><a href="services.html">Services</a></li>
+        <li class="hideonmobile"><a href="doctorspage.html" id="doctorspage">Doctors Page</a></li>
+        <li class="hideonmobile"><a href="consultingreservation.html">Consulting Reservation</a></li>
+        <li class="hideonmobile"><a href="pharmacy.html">Pharmacy</a></li>
+        <li class="hideonmobile"><a href="aboutus.html">About Us</a></li>
+        <li id="menubutton" onclick="Showsidebar()"><a><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <section id="headingsection">
+    <h1>Our Doctors</h1>
+  </section> 
+  <section id="doctors">
+    <h1>Learn more about our doctors!</h1>
+    <div id="boxcontainer">
+      <div class="box box1">
+        <img src="./images/doctor_1.jpg" alt="doctorimage">
+      </div>  
+      <div class="docdescription">
+        <h3>Dr. Brian Christensen</h3>
+        <br>
+        <p>Orthopedic Surgeon. Specializes in bone and joint issues.</p>
+      </div>
+      <div class="box box2">
+        <img src="./images/doctor_2.jpg" alt="doctorimage"> 
+      </div>  
+      <div class="docdescription">
+        <h3>Dr. Joe Holmes</h3>
+        <br>
+        <p> Cardiologist. Specializes in heart diseases and treatments.</p>
+      </div>
+      <div class="box box3">
+        <img src="./images/doctor_3.jpg" alt="doctorimage">
+      </div>  
+      <div class="docdescription">
+        <h3>Dr. Lydia Cook</h3>
+        <br>
+        <p>Pediatrician. Focuses on children's health and development.</p>
+      </div>
+      <div class="box box4">
+        <img src="./images/doctor_4.jpg" alt="doctorimage">
+      </div>  
+      <div class="docdescription">
+        <h3>Dr. Martin Hatfield</h3>
+        <br>
+        <p>Gastroenterologist. Focuses on digestive system health</p>
+      </div>
+      <div class="box box5">
+        <img src="./images/doctor_5.jpg" alt="doctorimage">
+      </div>  
+      <div class="docdescription">
+        <h3>Dr. Sarah Kelly</h3>
+        <br>
+        <p>Neurologist. Expert in brain and nervous system disorders.</p>
+      </div>
+      <div class="box box6">
+        <img src="./images/doctor_6.jpg" alt="doctorimage">
+      </div>  
+      <div class="docdescription">
+        <h3>Dr. Anna Hardy</h3>
+        <br>
+        <p>Oncologist. Provides care and treatment for cancer patients.</p> 
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="col1">
+        <a href="./index.html" class="brand">Care Corner</a>
+        <ul class="mediaicons">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./doctorspage.html">Doctors</a></li>
+          <li><a href="./consultingreservation.html">Reservation</a></li>
+          <li><a href="./pharmacy.html">Pharmacy</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+        <p>Care Corner Hospital. Providing compassionate care in Colombo and Kandy. Your health is our priority.</p>
+      </div>
+      <div class="col3">
+        <h3>Newsletter</h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2024 Care Corner. All rights reserved.</p>
+  </footer> 
+  <script>
+    function Showsidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "flex";
+    }
+    function Hidesidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "none";
+    }
+  </script> 
+  </body>
+  </html>

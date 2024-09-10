@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy | Care Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="reset_css.css">
+    <script defer src="pharmacy.jss"></script>
+    <script src="https://kit.fontawesome.com/f808eb4706.js"></script> 
+</head>
+<body>
+  <header id="header">
+    <ul id="sidebar">
+      <li><a onclick="Hidesidebar()" href="index.html"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="doctorspage.html">Doctors Page</a></li>
+      <li><a href="consultingreservation.html">Consulting Reservation</a></li>
+      <li><a href="pharmacy.html">Pharmacy</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul> 
+    <nav id="nav_bar"> 
+      <ul>
+        <li><a class="logoatag" href="index.html"><img src="images/Green and White Modern Medical Logo.png" class="logo"> </a></li>
+        <li class="hideonmobile"><a href="index.html">Home</a></li>
+        <li class="hideonmobile"><a href="services.html">Services</a></li>
+        <li class="hideonmobile"><a href="doctorspage.html">Doctors Page</a></li>
+        <li class="hideonmobile"><a href="consultingreservation.html">Consulting Reservation</a></li>
+        <li class="hideonmobile"><a href="pharmacy.html" id="pharmacy">Pharmacy</a></li>
+        <li class="hideonmobile"><a href="aboutus.html">About Us</a></li>
+        <li id="menubutton" onclick="Showsidebar()"><a><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="headingsection">
+    <h1>Pharmacy</h1>
+  </section>
+  <section id="pharmacyheading">
+    <h1>Order your medical prescriptions</h1>
+    <h1> And get them delivered to your doorstep!</h1> 
+  </section>
+  <div id="medicinelist">
+    <!-- Product items will be inserted here -->
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine1.png" alt="Aspirin">
+        <h3>Aspirin</h3>
+      </div>
+      <p class="itempara">Aspirin is an everyday painkiller for aches and pains such as headache, toothache, colds and flu-like symptoms, and to bring down a high temperature.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£2</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine2.png" alt="Paracetamol">
+        <h3>Paracetamol</h3>
+      </div>
+      <p class="itempara">Used to relieve pain and reduce fever. It is often used for headaches, muscle aches, arthritis, backaches, toothaches, colds, and fevers.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£2</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine3.png" alt="Amoxicillin">
+        <h3>Amoxicillin</h3>
+      </div>
+      <p class="itempara">A broad-spectrum antibiotic used to treat a variety of bacterial infections, including those of the ear, nose, throat, skin, and urinary tract.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£10</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine4.png" alt="Simvastatin">
+        <h3>Simvastatin</h3>
+      </div>
+      <p class="itempara">A statin used to lower cholesterol levels in the blood, which helps reduce the risk of heart disease and stroke.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£15</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine5.png" alt="Metformin">
+        <h3>Metformin</h3>
+      </div>
+      <p class="itempara">A medication used to manage type 2 diabetes by helping control blood sugar levels. It works by improving the body's sensitivity to insulin.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£13</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine6.png" alt="Lisinopril">
+        <h3>Lisinopril</h3>
+      </div>
+      <p class="itempara">An angiotensin-converting enzyme (ACE) inhibitor used to treat high blood pressure (hypertension) and heart failure. It helps relax blood vessels to improve blood flow.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£12</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine7.png" alt="Ibuprofen">
+        <h3>Ibuprofen</h3>
+      </div>
+      <p class="itempara">A nonsteroidal anti-inflammatory drug (NSAID) used to reduce fever, pain, inflammation, conditions like arthritis, menstrual cramps, and minor injuries.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£4</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="itemheading">
+        <img src="./images/png/medicine8.png" alt="Losartan">
+        <h3>Losartan</h3>
+      </div>
+      <p class="itempara">For high blood pressure and to decrease the risk of strokes in patients with high blood pressure.</p>
+      <div id="price">
+        <span>price:</span>
+        <span>£15</span>
+      </div>
+    </div>
+  </div>
+  <section id="mainsection">
+    <div id="formsection">
+      <form action="#">
+        <!--Customer start entering their info from here onwards-->
+        <div id="patientdetails">
+          <div class="formheading formheadingpatients">Patients details</div>
+          <div class="inputofuser">
+            <label class="headingofformcontent" for="Name">First Name: </label>
+            <input type="text" name="firstname" placeholder="First Name" required>
+          </div>
+          <div class="inputofuser">  
+            <label class="headingofformcontent" for="Name">Last Name: </label>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+          </div>
+          <div class="inputofuser">  
+            <label class="headingofformcontent" for="Name">Phone</label>: </label>
+            <input type="tel" name="phone" placeholder="phone number" required>
+          </div>
+          <div class="inputofuser">  
+            <label class="headingofformcontent" for="Email">Email: </label>
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>  
+        </div>
+        <!-- Order Details Section -->
+        <div id="orderdetails">
+          <div class="formheading">Order Details</div>
+          <div class="inputofuser">  
+            <label class="headingofformcontent" for="medicine">Medicine: </label>
+            <select name="medicine" required>
+              <option value="Aspirin">Aspirin</option>
+              <option value="Paracetamol">Paracetamol</option>
+              <option value="Amoxicillin">Amoxicillin</option>
+              <option value="Simvastatin">Simvastatin</option>
+              <option value="Metformin">Metformin</option>
+              <option value="Lisinopril">Lisinopril</option>
+              <option value="Ibuprofen">Ibuprofen</option>
+              <option value="Losartan">Losartan</option>
+            </select>
+          </div>
+          <div class="inputofuser">  
+            <label class="headingofformcontent" for="doctorname">Doctor's Name: </label>
+            <select name="doctorname">
+              <option value="Dr. Brian Christensen">Dr. Brian Christensen</option>
+              <option value="Dr. Lydia Cook">Dr. Lydia Cook</option>
+              <option value="Dr. Sarah Kelly">Dr. Sarah Kelly</option>
+              <option value="Dr. Joe Holmes">Dr. Joe Holmes</option>
+              <option value="Dr. Martin Hatfield">Dr. Martin Hatfield</option>
+              <option value="Dr. Anna Hardy">Dr. Anna Hardy</option>
+            </select>
+          </div>
+          <div class="inputofuser">  
+              <label class="headingofformcontent" for="quantity">Quantity: </label>
+              <input type="number" name="quantity" placeholder="Quantity" required>
+          </div>
+      </div>
+
+      <!-- Shipping Details Section -->
+      <div id="shippingdetails">
+          <div class="formheading">Shipping Details</div>
+          <div class="inputofuser">  
+              <label class="headingofformcontent" for="streetaddress">Street Address: </label>
+              <input type="text" name="streetaddress" placeholder="Street Address" required>
+          </div>
+          <div class="inputofuser">  
+              <label class="headingofformcontent" for="city">City: </label>
+              <input type="text" name="city" placeholder="City" required>
+          </div>
+          <div class="inputofuser">  
+              <label class="headingofformcontent" for="province">Province: </label>
+              <input type="text" name="province" placeholder="Province" required>
+          </div>
+          <div class="inputofuser">  
+              <label class="headingofformcontent" for="zipcode">Zip Code: </label>
+              <input type="text" name="zipcode" placeholder="Zip Code" required>
+          </div>
+        </div>
+        <div id="submitbutton">
+          <input type="button" value="Place Order">
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="col1">
+        <a href="./index.html" class="brand">Care Corner</a>
+        <ul class="mediaicons">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./doctorspage.html">Doctors</a></li>
+          <li><a href="./consultingreservation.html">Reservation</a></li>
+          <li><a href="./pharmacy.html">Pharmacy</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+        <p>Care Corner Hospital. Providing compassionate care in Colombo and Kandy. Your health is our priority.</p>
+      </div>
+      <div class="col3">
+        <h3>Newsletter</h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2024 Care Corner. All rights reserved.</p>
+  </footer> 
+  <script>
+    function Showsidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "flex";
+    }
+    function Hidesidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "none";
+    }
+  </script>
+</body>
+</html>

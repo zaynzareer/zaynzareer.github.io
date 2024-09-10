@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Care Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="reset_css.css">
+    <script src="https://kit.fontawesome.com/f808eb4706.js"></script> 
+</head>
+<body>
+  <header id="header">
+    <ul id="sidebar">
+      <li><a onclick="Hidesidebar()" href="index.html"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="doctorspage.html">Doctors Page</a></li>
+      <li><a href="consultingreservation.html">Consulting Reservation</a></li>
+      <li><a href="pharmacy.html">Pharmacy</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul> 
+    <nav id="nav_bar"> 
+      <ul>
+        <li><a class="logoatag" href="index.html"><img src="images/Green and White Modern Medical Logo.png" class="logo"> </a></li>
+        <li class="hideonmobile"><a href="index.html">Home</a></li>
+        <li class="hideonmobile"><a href="services.html" id="services">Services</a></li>
+        <li class="hideonmobile"><a href="doctorspage.html">Doctors Page</a></li>
+        <li class="hideonmobile"><a href="consultingreservation.html">Consulting Reservation</a></li>
+        <li class="hideonmobile"><a href="pharmacy.html">Pharmacy</a></li>
+        <li class="hideonmobile"><a href="aboutus.html">About Us</a></li>
+        <li id="menubutton" onclick="Showsidebar()"><a><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="headingsection">
+    <h1>Our Services</h1>
+  </section>
+<!-- <section id="servicesandimage">
+    <h1>Find the Care You Need</h1>
+    <p>At Care Corner, we are dedicated to providing exceptional care through a wide range of medical services designed to meet the diverse needs of our patients.</p>
+    <p>Explore our services provided by our dedicated team of specialists.</p>
+  </section> -->
+  <section id="servicesheading">
+    <h1>Explore our Services</h1>
+    <h2>From everyday needs to specialty treatment.</h2>
+  </section>
+  <section id="sectionflex">
+    <div id="servicesflex">
+      <div class="servicesbox">
+        <div class="serviceicon1"></div>
+        <div class="servicepara">
+          <h3>Emergency Care</h3>
+          <p>Immediate treatment for urgent medical conditions, including accidents, heart attacks, strokes, and severe infections. Emergency departments are equipped to handle critical situations around the clock.</p>
+        </div>
+      </div>
+      <div class="servicesbox"> 
+        <div class="serviceicon2"></div>
+        <div class="servicepara">
+          <h3>Laboratory Services</h3>
+          <p>Conducts tests on blood, urine, and other bodily fluids to diagnose conditions, monitor health, and guide treatment decisions. Labs perform tests like blood counts, chemistry panels, and microbial cultures.</p>
+        </div>
+      </div>      
+      <div class="servicesbox">
+        <div class="serviceicon3"></div>
+        <div class="servicepara">
+          <h3>Diagnostic Imaging</h3>
+          <p>Utilizes technologies such as X-rays, CT scans, MRIs, and ultrasounds to diagnose and monitor medical conditions. Imaging helps in visualizing internal structures and guiding treatment plans.</p>
+        </div>
+      </div>      
+      <div class="servicesbox">
+        <div class="serviceicon4"></div>
+        <div class="servicepara">
+          <h3>Surgical Services</h3>
+          <p>We do a range of procedures from minor surgeries to major operations. We have specialized surgical teams and facilities for different types of surgery, such as orthopedic, cardiovascular, and neurosurgery.</p>
+        </div>
+      </div>     
+      <div class="servicesbox">
+        <div class="serviceicon5"></div>
+        <div class="servicepara">
+          <h3>Rehabilitation Services</h3>
+          <p>Provides therapy and support for patients recovering from injury, surgery, or illness. Includes physical therapy, occupational therapy, and speech therapy to aid in regaining function and independence.</p>
+        </div>
+      </div>      
+      <div class="servicesbox">
+        <div class="serviceicon6"></div>
+        <div class="servicepara">
+          <h3>Mental Health Services</h3>
+          <p>Povides mental health care, including evaluation, therapy, and treatment for psychiatric conditions. Services can range from inpatient psychiatric care to outpatient counseling and medication management.</p>
+        </div>
+      </div>      
+    </div>
+  </section>
+  <section id="patientregister">
+      <h1 id="registertext">Register yourself here: </h1>
+      <div id="registerbox">
+        <form action="consultingreservation.html">
+          <input type="submit" value="Register">
+        </form>
+      </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="col1">
+        <a href="./index.html" class="brand">Care Corner</a>
+        <ul class="mediaicons">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./doctorspage.html">Doctors</a></li>
+          <li><a href="./consultingreservation.html">Reservation</a></li>
+          <li><a href="./pharmacy.html">Pharmacy</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+        <p>Care Corner Hospital. Providing compassionate care in Colombo and Kandy. Your health is our priority.</p>
+      </div>
+      <div class="col3">
+        <h3>Newsletter</h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2024 Care Corner. All rights reserved.</p>
+  </footer>   
+  <script>
+    function Showsidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "flex";
+    }
+    function Hidesidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "none";
+    }
+  </script> 
+  <!--
+  https://international.childrensnational.org
+  -->
+</body>
+</html>

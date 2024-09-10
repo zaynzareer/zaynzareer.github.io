@@ -191,10 +191,9 @@
     }
     .headingbox{
         position: absolute;
-        width: 400px;
+        width: 300px;
         height: 300px;
         top: 350px;
-        border:  2px solid red;
     }
     .welcometext {
         font-size: 45px;

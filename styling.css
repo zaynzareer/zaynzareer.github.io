@@ -45,8 +45,11 @@
     align-items: center;
     padding: 0;
 }
-#nav_bar li, #sidebar li{
+#nav_bar li{
     height: 100px;
+}
+#sidebar li{
+    height: 90px;
 }
 #nav_bar a, #sidebar a {
     height: 100%;

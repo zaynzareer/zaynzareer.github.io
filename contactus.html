@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Care Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="reset_css.css">
+    <script src="https://kit.fontawesome.com/f808eb4706.js"></script> 
+</head>
+<body>
+    <header id="header">
+        <ul id="sidebar">
+          <li><a onclick="Hidesidebar()"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctorspage.html">Doctors Page</a></li>
+          <li><a href="consultingreservation.html">Consulting Reservation</a></li>
+          <li><a href="pharmacy.html">Pharmacy</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html" id="contactus">Contact us</a></li>
+        </ul> 
+        <nav id="nav_bar"> 
+          <ul>
+            <li><a class="logoatag" href="index.html"><img src="images/Green and White Modern Medical Logo.png" class="logo"> </a></li>
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="services.html">Services</a></li>
+            <li class="hideonmobile"><a href="doctorspage.html">Doctors Page</a></li>
+            <li class="hideonmobile"><a href="consultingreservation.html">Consulting Reservation</a></li>
+            <li class="hideonmobile"><a href="pharmacy.html">Pharmacy</a></li>
+            <li class="hideonmobile"><a href="aboutus.html">About Us</a></li>
+            <li class="hideonmobile"><a href="contactus.html" id="contactus">Contact us</a></li>
+            <li id="menubutton" onclick="Showsidebar()"><a><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+  <main>
+    <section id="headingsection">
+        <h1>Contact Us</h1>
+    </section>
+    <section id="contactuscontainer">
+        <div id="contactusformdiv">
+          <div class="contactinfo">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">Have a question or need more information? Fill out the form, and a member of our team will get back to you as soon as possible!</p>
+            <div class="info">
+              <div class="information">
+                <i class="fa-solid fa-envelope"></i>
+                <p>92 Cherry Drive Uniondale, Srilanka 11553</p>
+              </div>
+              <div class="information">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>info@carecorner.com</p>
+              </div>
+              <div class="information">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>071-739-026</p>
+              </div>
+            </div>         
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div> 
+          <div id="contactusform">
+            <form action="#">
+              <h3 class="title">Contact us</h3>
+              <div class="inputcontainer">
+                <label for="">Username</label>
+                <input class="input" type="text" name="name" />   
+              </div>
+              <div class="inputcontainer">
+                <label for="">Email</label>
+                <input class="input" type="email" name="email" />
+              </div>
+              <div class="inputcontainer">
+                <label for="">Phone</label>
+                <input class="input" type="tel" name="phone" />
+              </div>
+              <div class="inputcontainer textarea">
+                <label for="">Message</label>
+                <textarea name="message" class="input"></textarea>
+              </div>
+              <input class="input" type="submit" value="Send" id="sendbutton" />
+            </form>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="col1">
+        <a href="./index.html" class="brand">Care Corner</a>
+        <ul class="mediaicons">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./doctorspage.html">Doctors</a></li>
+          <li><a href="./consultingreservation.html">Reservation</a></li>
+          <li><a href="./pharmacy.html">Pharmacy</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./contactus.html">contact Us</a></li>
+        </ul>
+        <p>Care Corner Hospital. Providing compassionate care in Colombo and Kandy. Your health is our priority.</p>
+      </div>
+      <div class="col3">
+        <h3>Newsletter</h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2024 Care Corner. All rights reserved.</p>
+  </footer> 
+  <script>
+    function Showsidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "flex";
+    }
+    function Hidesidebar(){
+      const sidebar = document.querySelector("#sidebar");
+      sidebar.style.display = "none";
+    }
+  </script>
+  <!--
+  https://www.durdans.com/contact-us/
+  -->
+</body>
+</html>

@@ -10,6 +10,16 @@
 
 /*End of :root variables*/
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
 .poppins-light, body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -62,7 +72,7 @@
     height: 100vh;
     width: 300px;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.235);  
+    background-color: rgba(255, 255, 255, 0.806);  
     backdrop-filter: blur(10px);
     box-shadow: var(--box-shadow);
     display: none;
@@ -99,18 +109,29 @@
     width: inherit;
     height: inherit;
     border-radius: var(--border-radius);
+    box-shadow: white inset;
 }
 .headingbox {
     position: absolute;
     width: 510px;
     height: 350px;
-    top: 450px;
+    top: 330px;
     color: white;
 }
 .welcometext {
     font-size: 60px;
     margin: 0;
     padding: 0 10px 0 0;
+}
+@keyframes sideappear {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .welcomediv, .todiv, .carecornerdiv {
     height: 90px;
@@ -119,12 +140,8 @@
     background-color: var(--primary-color);
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-}
-.todiv {
-    width: 200px;
-}
-.carecornerdiv {
-    width: 500px;
+    padding-right: 10px;
+    animation: sideappear 1.5s linear;
 }
 #whoarewe {
     font-size: 20px;
@@ -134,6 +151,9 @@
     margin-bottom: 40px;
     background-color: var(--primary-color);
     color: white;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .parasection {
     width: auto;
@@ -143,6 +163,9 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .secondimage {
     width: 600px;
@@ -184,10 +207,10 @@
         position: absolute;
         width: 300px;
         height: 300px;
-        top: 350px;
+        top: 250px;
     }
     .welcometext {
-        font-size: 45px;
+        font-size: 35px;
     }
     .welcomediv, .todiv, .carecornerdiv {
         height: 70px;
@@ -201,8 +224,8 @@
 @media (max-width:768px){
     .headingbox{
         position: absolute;
-        width: 510px;
-        height: 350px;
+        width: 410px;
+        height: 250px;
         top: 250px;
     }
     .welcometext {
@@ -229,19 +252,20 @@
     .para2{
         width: 95%;
         margin: 20px auto;
-        font-size: 18px;
+        font-size: 15px;
+        height: auto;
     }
     .headingbox{
         position: absolute;
-        width: 510px;
-        height: 350px;
-        top: 150px;
+        width: 200px;
+        height: 150px;
+        top: 130px;
     }
     .welcometext {
-        font-size: 20px;
+        font-size: 16px;
     }
     .welcomediv, .todiv, .carecornerdiv {
-        height: 40px;
+        height: auto;
         width:fit-content ;
         font-family: Verdana, Tahoma, sans-serif;
         background-color: var(--primary-color);
@@ -249,7 +273,7 @@
         border-bottom-right-radius: 15px;
     }
     #whoarewe {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 #listflex {
@@ -258,6 +282,9 @@
     display: flex;
     font-size: 18px;
     justify-content: space-around;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .listitem {
     background-color: var(--background-color);
@@ -273,12 +300,12 @@
 .listitem h2 {
     color: var(--primary-color);
 }
-@media (min-width:320px){
+@media (max-width:480px){
     #listflex{
         flex-direction: column;
         margin-bottom: 180px;
         align-items: center;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -335,6 +362,9 @@
     cursor: default;
     margin: 20px 0;
     transition: .25s ease-in-out;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .servicesbox:hover {
     background-color: var(--primary-color);
@@ -375,6 +405,9 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 #registertext {
     margin: 20px 0 20px 10px;
@@ -437,6 +470,7 @@
     border: solid var(--primary-color) 1px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    animation: appear 0.5s linear;
 }
 .docdescription {
     width: 300px;
@@ -446,6 +480,7 @@
     border: none;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    animation: appear 0.5s linear;
 }
 .docdescription h3 {
     color: var(--primary-color);
@@ -461,16 +496,128 @@
 .docdescription:hover, .box:hover{
     transform: scale(1.025);
 }
-@media (max-width:480px){
+#doctors {
+    width: 100%;
+    height: auto;
+}
+
+#doctors h1 {
+    margin: 40px 0 40px 10px;
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 50px 0px 20px 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: solid var(--primary-color) 1px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.docdescription {
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.docdescription h3 {
+    color: var(--primary-color);
+}
+
+.docdescription p {
+    color: var(--secondary-color);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.docdescription:hover, .box:hover {
+    transform: scale(1.025);
+}
+
+/* Mobile responsiveness */
+@media (max-width:1024px) {
     #boxcontainer{
-        grid-template-columns: repeat(1, 1fr 2fr);
-        grid-template-rows: repeat(6, 1fr);
-        row-gap: 40px;
-    }
-    .docdescription {
-        width: 190px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+        margin: 20px 0;
+        justify-items: center;
     }
 }
+@media (max-width: 768px) {
+    #boxcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 30px;
+        margin: 20px 0;
+        justify-items: center;
+    }
+    .box, .docdescription {
+        width: 70%;
+        height: auto;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+    }
+    .docdescription {
+        padding: 10px;
+        text-align: left;
+    }
+    .docdescription h3 {
+        font-size: 19px;
+    }
+    .docdescription p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    #boxcontainer {
+        grid-template-rows: repeat(6, auto);
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .box {
+        width: 80%;
+        height: auto;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+    }
+    .docdescription {
+        width: 90%;
+        padding: 10px;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+    }
+    .docdescription h3 {
+        font-size: 17px;
+    }
+    .docdescription p {
+        font-size: 13px;
+    }
+}
+
 
 
 /*Css for consulting reservation */
@@ -575,8 +722,13 @@
 @media (max-width:768px){
     #formsection{
         width: 80%;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
     }
 }
+
+
 /*Css for pharmacy */
 
 
@@ -607,6 +759,7 @@
     display: grid;
     grid-template-rows: 35px 1fr 40px;
     transition: all 0.2s ease;
+    animation: appear 1s linear;
     &:hover{
         transform: scale(1.025);
         }
@@ -662,18 +815,31 @@
     transition: all 0.3s ease;
 }
 @media (max-width:1024px){
+    .item{
+        animation: appear 1s linear;
+    }
     #medicinelist{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 }
 @media (max-width:768px){
+    .item{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+    }
     #medicinelist{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
 }
 @media (max-width:480px){
+    .item{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+    }
     #medicinelist{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
@@ -706,6 +872,9 @@
     border: none;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .branchinfo h1 {
     color: var(--primary-color);
@@ -713,6 +882,9 @@
 .maps {
     width: 600px;
     height: 400px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .maps iframe {
     width: 600px;
@@ -730,6 +902,9 @@
 .branchimage {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 .imgheader {
     width: auto;
@@ -786,6 +961,9 @@
 #aboutustable{
     width: 80%;
     margin: 70px auto;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 #aboutustable thead{
     background-color: var(--primary-color);
@@ -835,8 +1013,228 @@
 }
 
 
+/* Css for Contact Us page */
+
+#contactuscontainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contactusformdiv {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#contactusform {
+  background-color: var(--primary-color);
+  position: relative;
+}
+#contactusform:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px; 
+  background-color: var(--primary-color);
+  transform: rotate(45deg);
+  top: 50px; 
+  left: -13px; 
+}
+#contactusform form {
+  padding: 36px 35px;
+  overflow: hidden;
+  position: relative;
+}
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px; 
+  line-height: 1;
+  margin-bottom: 11px; 
+}
+.inputcontainer {
+  position: relative;
+  margin: 16px 0; 
+}
+.inputcontainer .input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 10px 19px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.textarea .input {
+  padding: 13px 19px; 
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+.inputcontainer label {
+  padding: 0 6px; 
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
+  pointer-events: none;
+}
+.inputcontainer.textarea label {
+  top: 16px; 
+}
+#sendbutton {
+  padding: 10px 20px; 
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 15px; 
+  color: var(--primary-color);
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+  &:hover{
+    background-color: transparent;
+  color: #fff;
+  }
+}
+.contactinfo {
+  padding: 37px 35px;
+  position: relative;
+}
+.contactinfo .title {
+  color: var(--primary-color);
+}
+.text {
+  color: #333;
+  margin: 24px 0 32px 0; 
+}
+.information {
+  display: flex;
+  color: #555;
+  margin: 11px 0;
+  align-items: center;
+  font-size: 15px; 
+}
+.information i{
+  width: 20px;
+  margin-right: 11px;
+  color: var(--primary-color);
+}
+.social-media {
+  padding: 32px 0 0 0; 
+}
+.social-media p {
+  color: #333;
+}
+.social-icons {
+  display: flex;
+  margin-top: 8px; 
+}
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgb(28, 205, 170), var(--primary-color));
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 8px; 
+  transition: 0.3s;
+}
+.social-icons a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+.contactinfo:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid #1abc9c;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+@media (max-width: 850px) {
+  #contactusformdiv {
+    grid-template-columns: 1fr;
+  }
+  .contactinfo:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+  #contactusform:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+  .text {
+    margin: 16px 0 24px 0; 
+  }
+  .social-media {
+    padding: 24px 0 0 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  #contactuscontainer {
+    padding: 24px;
+  }
+  .contactinfo:before {
+    display: none;
+  }
+  form,
+  .contactinfo {
+    padding: 27px 26px;
+  }
+  .text,
+  .information,
+  .social-media p {
+    font-size: 13px; 
+  }
+  .title {
+    font-size: 18px; 
+  }
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .icon {
+    width: 23px;
+  }
+  .input {
+    padding: 7px 19px;
+  }
+  #sendbutton {
+    padding: 7px 19px;
+  }
+}
+
+
+
 /* Css for current page indication */
-#home, #consultingreservation, #aboutus, #services, #pharmacy, #doctorspage {
+#home, #consultingreservation, #aboutus, #services, #pharmacy, #doctorspage, #contactus{
     border-bottom: 4px solid var(--secondary-color);
     font-weight: 600;
 }
